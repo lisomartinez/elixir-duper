@@ -9,6 +9,7 @@ defmodule Duper.Application do
         Duper.Results,
         { Duper.PathFinder, "."},
         Duper.WorkerSupervisor,
+        { Duper.Gatherer, 1},
     ]
 
     opts = [strategy: :one_for_all, name: Duper.Supervisor]
